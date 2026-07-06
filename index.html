@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eichler Finder — What model is your Eichler?</title>
+  <meta name="description" content="Identify which Eichler home model you live in: find your tract, answer three questions, and discover your home's model family.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="logo">
+        <svg viewBox="0 0 64 40" aria-hidden="true"><path d="M2 38 L22 10 L42 38 Z M30 38 L46 16 L62 38 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>
+        <span>Eichler&nbsp;Finder</span>
+      </div>
+      <p class="tagline">Which Eichler do you live in?</p>
+    </div>
+  </header>
+
+  <main class="wrap" id="app">
+
+    <!-- STEP 1: neighborhood -->
+    <section id="step-tract" class="card">
+      <h2><span class="step-num">1</span> Find your neighborhood</h2>
+      <p>Joseph Eichler built his ~11,000 homes in named tracts, and each tract used a small set of models — so knowing your neighborhood already narrows things down a lot.</p>
+      <div class="pickers">
+        <label>Region
+          <select id="region-select"><option value="">All regions</option></select>
+        </label>
+        <label>Neighborhood
+          <select id="tract-select"><option value="">Select your neighborhood…</option></select>
+        </label>
+      </div>
+      <div id="tract-info" class="tract-info hidden"></div>
+      <div class="actions">
+        <button id="btn-quiz" class="btn primary">Identify my model →</button>
+        <button id="btn-skip" class="btn ghost">I don't know my neighborhood — skip to the quiz</button>
+      </div>
+    </section>
+
+    <!-- STEP 2: quiz -->
+    <section id="step-quiz" class="card hidden">
+      <h2><span class="step-num">2</span> Three quick questions</h2>
+      <form id="quiz-form"></form>
+      <div class="actions">
+        <button id="btn-result" class="btn primary">Show my result →</button>
+        <button id="btn-back" class="btn ghost">← Back</button>
+      </div>
+    </section>
+
+    <!-- STEP 3: result -->
+    <section id="step-result" class="card hidden">
+      <h2><span class="step-num">3</span> Your Eichler, most likely…</h2>
+      <div id="result"></div>
+      <div class="next-steps">
+        <h3>Find your exact plan number</h3>
+        <ol>
+          <li><strong>Check your garage.</strong> Eichler's crews often nailed a plywood board high on a stud wall near the front of the garage listing the lot number, plan number, and tract.</li>
+          <li><strong>Look up your lot on the original site plan.</strong> The UC Berkeley Environmental Design Archives publishes scanned site plans for 36 Eichler tracts — each lot is labeled with its model number. Browse the <a href="https://virtualcollections.ced.berkeley.edu/" target="_blank" rel="noopener">Virtual Collections Portal</a> or the <a href="https://ced.berkeley.edu/collections/eichler-site-plans-oakland-and-imada-virtual-collection" target="_blank" rel="noopener">Oakland &amp; Imada Eichler collection</a>.</li>
+          <li><strong>Ask the community.</strong> <a href="https://www.eichlernetwork.com" target="_blank" rel="noopener">Eichler Network</a> forums are great at identifying models from photos.</li>
+        </ol>
+      </div>
+      <div class="actions">
+        <button id="btn-restart" class="btn ghost">← Start over</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>Data compiled from public sources including the UC Berkeley Environmental Design Archives, Eichler Network, USModernist, and Mid-Mod Homes. Counts and dates are approximate — corrections welcome.</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

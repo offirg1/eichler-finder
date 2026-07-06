@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "description": "Eichler model families used for visual identification. Individual plan numbers (e.g. AA-1, JE-101, OC-244) belong to a family; exact numbers come from tract site plans at the UC Berkeley Environmental Design Archives.",
+    "note": "Eras overlap — Eichler often built several families side by side in one tract."
+  },
+  "families": [
+    {
+      "id": "early-flattop",
+      "name": "Early Flat-Top",
+      "era": "1949–1954",
+      "eraStart": 1949,
+      "eraEnd": 1955,
+      "architects": ["Anshen + Allen"],
+      "signature": "Flat roof, simple rectangle, front door opens directly into the living space",
+      "description": "The original Eichlers: compact 3-bedroom rectangles (roughly 1,000–1,300 sq ft) with flat roofs, radiant-heated concrete slab floors, mahogany paneling, a carport rather than a garage, and a glass window-wall facing the back yard. No atrium — the front facade is mostly solid with clerestory or slot windows.",
+      "howToSpot": [
+        "Flat roof across the whole house",
+        "Front door opens directly into the living area (no atrium, no gallery hall)",
+        "Carport instead of an enclosed garage on many lots",
+        "Compact rectangular footprint"
+      ]
+    },
+    {
+      "id": "gable-classic",
+      "name": "Low-Gable Classic",
+      "era": "1954–1960",
+      "eraStart": 1953,
+      "eraEnd": 1961,
+      "architects": ["Anshen + Allen", "Jones & Emmons"],
+      "signature": "Low-pitched gable over the living area, glass at the gable end",
+      "description": "Mid-50s evolution: a low-slung gable roof rises over the main living space (often with a fully glazed gable end facing the yard) while bedroom wings stay flat-roofed. Homes grew to 4 bedrooms and added proper garages.",
+      "howToSpot": [
+        "Low triangular gable over the living room, flat roof over bedroom wings",
+        "Floor-to-ceiling glass filling the gable end",
+        "Post-and-beam ceiling following the roof slope inside",
+        "Entry into a modest hall or multipurpose room, not an open-air atrium"
+      ]
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery Model",
+      "era": "1955–1965",
+      "eraStart": 1955,
+      "eraEnd": 1966,
+      "architects": ["Jones & Emmons", "Claude Oakland"],
+      "signature": "Front door opens into a wide covered interior hallway (the \"gallery\")",
+      "description": "Instead of an open-air atrium, the front door opens into a generous enclosed circulation spine — the gallery — that runs across the house and organizes the rooms around it. Often paired with flat or low-gable roofs.",
+      "howToSpot": [
+        "Front door leads into a wide, fully roofed interior hall",
+        "Rooms branch off both sides of that hall",
+        "No open-to-the-sky space inside the house"
+      ]
+    },
+    {
+      "id": "courtyard",
+      "name": "Courtyard Model",
+      "era": "1956–1962",
+      "eraStart": 1956,
+      "eraEnd": 1963,
+      "architects": ["Anshen + Allen", "Jones & Emmons"],
+      "signature": "Entry through a walled front or side courtyard, house wraps partly around it",
+      "description": "A transitional step toward the atrium: you pass through a gate into a private walled courtyard before reaching the front door. The courtyard sits at the front or side of the house rather than fully enclosed at its center.",
+      "howToSpot": [
+        "Gate and walled outdoor courtyard before the front door",
+        "Courtyard is at the front/side edge of the house, not fully surrounded by rooms",
+        "L- or U-shaped floor plan wrapping the courtyard"
+      ]
+    },
+    {
+      "id": "atrium",
+      "name": "Atrium Model",
+      "era": "1958–1974",
+      "eraStart": 1958,
+      "eraEnd": 1974,
+      "architects": ["Jones & Emmons", "Claude Oakland"],
+      "signature": "Front door opens into an open-air atrium at the center of the house",
+      "description": "The iconic Eichler. A mostly blank street facade hides a glass-walled, open-to-the-sky atrium at the heart of the house; every main room looks into it. Introduced in 1958 and built in huge numbers through the 60s and early 70s.",
+      "howToSpot": [
+        "You open the front door and you're still outdoors — sky above you",
+        "Glass walls on all sides of that central court",
+        "Blank or nearly windowless street-facing facade",
+        "Rooms arranged in a ring around the atrium"
+      ]
+    },
+    {
+      "id": "double-aframe",
+      "name": "Double A-Frame / High Gable",
+      "era": "1962–1970",
+      "eraStart": 1962,
+      "eraEnd": 1971,
+      "architects": ["Claude Oakland"],
+      "signature": "One or two dramatic steep gables dominating the roofline",
+      "description": "Claude Oakland's late-60s showpieces: steeply pitched A-frame gables (sometimes a pair) over the living space or atrium, giving soaring ceilings. Common in Upper Lucas Valley, Rancho Sans Souci, and other mid/late-60s tracts.",
+      "howToSpot": [
+        "Steep, dramatic gable(s) visible from the street — much taller than the low-gable classics",
+        "Soaring tent-like ceiling in the living room",
+        "Usually combined with an atrium or gallery entry"
+      ]
+    },
+    {
+      "id": "two-story",
+      "name": "Two-Story & Split-Level",
+      "era": "1962–1974",
+      "eraStart": 1962,
+      "eraEnd": 1974,
+      "architects": ["Claude Oakland"],
+      "signature": "More than one level — rare for an Eichler",
+      "description": "Uncommon: split-levels built on steep San Francisco hillsides (Diamond Heights), a two-story cluster in Terra Linda, and late two-story models in Palo Alto's Los Arboles Addition (1970–74).",
+      "howToSpot": [
+        "Two full floors or a split-level section",
+        "Steep or urban lot",
+        "Post-and-beam ceilings and window-walls still present on the main level"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "id": "entry",
+      "question": "Open your front door. What's on the other side?",
+      "options": [
+        { "id": "sky", "label": "An open-air courtyard — I can see the sky before entering the house", "hint": "Glass walls around it, rooms all the way around" },
+        { "id": "hall", "label": "A wide covered interior hallway", "hint": "Fully roofed, rooms branch off it" },
+        { "id": "living", "label": "Directly into the living room / main space", "hint": "No separate entry space to speak of" },
+        { "id": "court-before", "label": "I pass through a walled outdoor courtyard before the front door", "hint": "A gate, then a garden court, then the door" }
+      ]
+    },
+    {
+      "id": "roof",
+      "question": "What does your roof look like from the street?",
+      "options": [
+        { "id": "flat", "label": "Flat all the way across" },
+        { "id": "low-gable", "label": "A low, gentle gable over part of the house" },
+        { "id": "steep-gable", "label": "One or two dramatic, steep A-frame gables" },
+        { "id": "unsure", "label": "Not sure / hard to tell" }
+      ]
+    },
+    {
+      "id": "stories",
+      "question": "How many levels does your home have?",
+      "options": [
+        { "id": "one", "label": "One story" },
+        { "id": "split", "label": "Split-level" },
+        { "id": "two", "label": "Two full stories" }
+      ]
+    }
+  ]
+}
