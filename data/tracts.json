@@ -178,8 +178,8 @@
       "yearEnd": 1955,
       "architects": [],
       "homes": null,
-      "streets": "El Cajon Way, El Capitan Ave, near El Camino Real",
-      "notes": "Named for its three 'El' streets.",
+      "streets": "El Cajon Way, Elsinore Dr, Elsinore Ct, Blair Ct, Oregon Ave (bounded by Oregon Expwy, Greer Rd, Louis Rd)",
+      "notes": "Named for its 'El' streets. Street list verified against the OpenStreetMap neighborhood boundary.",
       "historic": null,
       "verified": false,
       "centroid": [
