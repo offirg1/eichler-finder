@@ -24,6 +24,15 @@
     <section id="step-tract" class="card">
       <h2><span class="step-num">1</span> Find your neighborhood</h2>
       <p>Joseph Eichler built his ~11,000 homes in named tracts, and each tract used a small set of models — so knowing your neighborhood already narrows things down a lot.</p>
+      <form id="address-form" class="address-form">
+        <label for="address-input">Enter your address and we'll find your tract</label>
+        <div class="address-row">
+          <input id="address-input" type="text" placeholder="e.g. 3735 Greenmeadow Way, Palo Alto" autocomplete="street-address">
+          <button type="submit" class="btn primary" id="btn-address">Find it</button>
+        </div>
+        <p id="address-status" class="address-status" role="status"></p>
+      </form>
+      <p class="divider-label">— or pick it manually —</p>
       <div class="pickers">
         <label>Region
           <select id="region-select"><option value="">All regions</option></select>
@@ -69,7 +78,7 @@
   </main>
 
   <footer class="site-footer wrap">
-    <p>Data compiled from public sources including the UC Berkeley Environmental Design Archives, Eichler Network, USModernist, and Mid-Mod Homes. Counts and dates are approximate — corrections welcome.</p>
+    <p>Data compiled from public sources including the UC Berkeley Environmental Design Archives, Eichler Network, USModernist, and Mid-Mod Homes. Counts and dates are approximate — corrections welcome. Address search powered by <a href="https://nominatim.org" target="_blank" rel="noopener">Nominatim</a> / © OpenStreetMap contributors.</p>
   </footer>
 
   <script src="js/app.js"></script>

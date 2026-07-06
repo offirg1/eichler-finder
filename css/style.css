@@ -71,6 +71,31 @@ body {
 }
 .hidden { display: none; }
 
+/* address lookup */
+.address-form { margin: 1.25rem 0 0.5rem; }
+.address-form > label { font-weight: 600; font-size: 0.9rem; display: block; margin-bottom: 0.35rem; }
+.address-row { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.address-row input {
+  font: inherit;
+  flex: 1 1 260px;
+  padding: 0.55rem 0.7rem;
+  border: 2px solid var(--charcoal);
+  border-radius: 6px;
+  background: #fff;
+}
+.address-row input:focus { outline: 2px solid var(--orange); outline-offset: 1px; }
+.address-status { min-height: 1.2em; margin: 0.5rem 0 0; font-size: 0.9rem; color: var(--walnut); }
+.address-status.error { color: #b3462e; font-weight: 600; }
+.address-status.ok { color: var(--teal); font-weight: 600; }
+.divider-label {
+  text-align: center;
+  color: #7a7566;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 1.25rem 0 0;
+}
+
 /* pickers */
 .pickers { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.25rem 0; }
 .pickers label { display: flex; flex-direction: column; gap: 0.35rem; font-weight: 600; font-size: 0.9rem; flex: 1 1 220px; }

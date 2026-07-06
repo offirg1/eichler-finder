@@ -32,9 +32,18 @@ All tract entries are marked `"verified": false` — years and counts are compil
 - [USModernist Eichler catalog](https://www.usmodernist.org/eichler.htm) — individual homes with plan references
 - [Eichler Tracts of Orange StoryMap](https://storymaps.arcgis.com/stories/c5f913f6197c4e5f96e68a08162e3687) — SoCal tracts
 
+## Address lookup
+
+The address box geocodes what the user types via [Nominatim](https://nominatim.org) (OpenStreetMap, no API key) and matches against the tract database in two passes:
+
+1. **Street match** (confident): the geocoded street name, normalized, appears in a tract's street list — and the city agrees or the point is within 5 km (unincorporated areas like Lucas Valley geocode under different place names).
+2. **Proximity match** (likely/nearby): distance to each tract's centroid — under 1.2 km with a street-precision centroid is "very likely", under 3 km is "closest known tract".
+
+Centroids live in `tracts.json` (`centroid` + `centroidPrecision`), generated once by `tools/geocode_tracts.py` (1 req/sec, curl-based). Tracts marked `centroidPrecision: "city"` still need real anchor streets for precise matching.
+
 ## Roadmap
 
-1. **Now (MVP):** tract picker + visual quiz → model family
-2. **Next:** address lookup — draw tract boundary polygons (GeoJSON), geocode the user's address, auto-detect the tract
+1. ~~**MVP:** tract picker + visual quiz → model family~~ ✅
+2. ~~**Address lookup:** geocode the user's address, auto-detect the tract~~ ✅ (centroid-based; boundary polygons would be the next refinement)
 3. **Then:** per-lot model numbers — transcribe the Berkeley site plans for a few flagship tracts (Greenmeadow, San Mateo Highlands, the Orange tracts) into a `homes` table; add a "confirm/correct my model" button so owners crowdsource the rest
 4. **Later:** photo-based identification, floor-plan galleries per model

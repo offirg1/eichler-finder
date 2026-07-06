@@ -11,60 +11,1100 @@
     "lastUpdated": "2026-07-06"
   },
   "tracts": [
-    { "id": "university-gardens", "name": "University Gardens", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1949, "yearEnd": 1950, "architects": ["Anshen + Allen"], "homes": null, "streets": "Stanford Ave, Middlefield Rd", "notes": "Early post-and-beam prototype tract.", "historic": null, "verified": false },
-    { "id": "el-centro-gardens", "name": "El Centro Gardens", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1950, "yearEnd": 1950, "architects": [], "homes": null, "streets": "El Centro Dr, Channing Ave", "notes": "Transitional early tract.", "historic": null, "verified": false },
-    { "id": "green-gables", "name": "Green Gables", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1950, "yearEnd": 1951, "architects": ["Anshen + Allen"], "homes": null, "streets": "Greer Rd, Channing Ave, Ivy Ln (near Edgewood Plaza)", "notes": "One of the most architecturally cohesive early tracts.", "historic": "National Register Historic District", "verified": false },
-    { "id": "charleston-meadows", "name": "Charleston Meadows", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1950, "yearEnd": 1951, "architects": [], "homes": null, "streets": "Near Charleston Rd, Wilcot Way", "notes": "Early indoor-outdoor flow designs.", "historic": null, "verified": false },
-    { "id": "greer-park", "name": "Greer Park", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1950, "yearEnd": 1951, "architects": [], "homes": null, "streets": "Adjacent to Greer Park, California Ave", "notes": "Walkable, amenity-rich siting.", "historic": null, "verified": false },
-    { "id": "channing-park", "name": "Channing Park (1–3)", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1951, "yearEnd": 1955, "architects": [], "homes": null, "streets": "Channing Ave corridors", "notes": "Model evolution visible across the three phases.", "historic": null, "verified": false },
-    { "id": "fairmeadow-pa", "name": "Fairmeadow (\"The Circles\")", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1951, "yearEnd": 1954, "architects": [], "homes": null, "streets": "Concentric circular streets off East Meadow Dr", "notes": "Famous curvilinear street geometry.", "historic": null, "verified": false },
-    { "id": "greenmeadow", "name": "Greenmeadow (1 & 2)", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1954, "yearEnd": 1955, "architects": ["Jones & Emmons"], "homes": null, "streets": "Parkside Dr, Ferne Ave, Greenmeadow Way (near Charleston Rd)", "notes": "Refined mid-50s designs; community pool and center.", "historic": "National Register Historic District", "verified": false },
-    { "id": "triple-el", "name": "Triple El", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1955, "yearEnd": 1955, "architects": [], "homes": null, "streets": "El Cajon Way, El Capitan Ave, near El Camino Real", "notes": "Named for its three 'El' streets.", "historic": null, "verified": false },
-    { "id": "edgewood-pa", "name": "Edgewood", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1956, "yearEnd": 1956, "architects": [], "homes": null, "streets": "Adjacent to Greer Rd", "notes": "Bridge-phase designs between early and atrium eras.", "historic": null, "verified": false },
-    { "id": "royal-manor", "name": "Royal Manor", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1957, "yearEnd": 1958, "architects": [], "homes": null, "streets": "Near Lawrence Rd, Louis Rd", "notes": "Late-1950s refinement; first atrium models appear around this era.", "historic": null, "verified": false },
-    { "id": "los-arboles", "name": "Los Arboles", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1959, "yearEnd": 1961, "architects": [], "homes": null, "streets": "Ames Ave, Middlefield Rd, Holly Oak Dr, Cork Oak Way", "notes": "Tree-themed street names; atrium-era models.", "historic": null, "verified": false },
-    { "id": "los-arboles-addition", "name": "Los Arboles Addition", "city": "Palo Alto", "region": "Silicon Valley", "yearStart": 1970, "yearEnd": 1974, "architects": ["Claude Oakland"], "homes": null, "streets": "Torreya Ct, Loma Verde Ave", "notes": "Rare two-story Eichler models.", "historic": null, "verified": false },
-    { "id": "sunnyvale-manor-1", "name": "Sunnyvale Manor I", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1949, "yearEnd": 1949, "architects": [], "homes": 8, "streets": "North Bayview Ave, East Maude Ave", "notes": "The very first Eichler tract; pre-radiant-heating prototypes.", "historic": null, "verified": false },
-    { "id": "sunnyvale-manor-2", "name": "Sunnyvale Manor II", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1950, "yearEnd": 1950, "architects": ["Anshen + Allen"], "homes": 105, "streets": "Morse Ave, Maple Ave, East Arbor Ave, East Duane Ave", "notes": "AA-1 floor plan; the first architect-designed Eichlers with the glass window-wall.", "historic": null, "verified": false },
-    { "id": "fairpark", "name": "Fairpark", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1954, "yearEnd": 1954, "architects": [], "homes": 48, "streets": "Central Sunnyvale", "notes": "Modest transitional models.", "historic": null, "verified": false },
-    { "id": "fairorchard", "name": "Fairorchard", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1956, "yearEnd": 1956, "architects": [], "homes": 85, "streets": "Wright Ave, Edmonton Ave, La Salle Dr, Helena Dr, Homestead Rd", "notes": "Strong indoor-outdoor flow.", "historic": null, "verified": false },
-    { "id": "fairbrae", "name": "Fairbrae", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1958, "yearEnd": 1958, "architects": [], "homes": 87, "streets": "Sheraton Dr, Pome Ave, Quince Ave, Pulora Ct, Hollenbeck Ave", "notes": "Late-1950s refinement; community swim club.", "historic": null, "verified": false },
-    { "id": "fairbrae-addition", "name": "Fairbrae Addition", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1959, "yearEnd": 1960, "architects": [], "homes": 275, "streets": "Sesame Dr, Torrington Dr, Templeton Dr, Strawberry Ct, Tangerine Way", "notes": "Major expansion phase.", "historic": null, "verified": false },
-    { "id": "rancho-verde", "name": "Rancho Verde", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1960, "yearEnd": 1961, "architects": [], "homes": 140, "streets": "South Mary Ave, Ticonderoga Dr, McIntosh Ave, Trenton Dr, Somerset Dr", "notes": "Atrium layouts.", "historic": null, "verified": false },
-    { "id": "fairwood", "name": "Fairwood", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1961, "yearEnd": 1962, "architects": [], "homes": 215, "streets": "South Wolfe Rd, Dartshire Way, Mallard Way, Kingfisher Way, Carlisle Way, Firebird Way", "notes": "Diverse floor plans.", "historic": null, "verified": false },
-    { "id": "parmer-place", "name": "Parmer Place", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1967, "yearEnd": 1967, "architects": [], "homes": 42, "streets": "Cumberland Dr, Piper Ave, Pear Ave, Brookline Dr", "notes": "Late-era enclave.", "historic": null, "verified": false },
-    { "id": "rancho-sans-souci", "name": "Rancho Sans Souci", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1968, "yearEnd": 1968, "architects": [], "homes": 84, "streets": "Mackenzie Dr, Laurentian Dr, Olympus Dr, Pendleton Dr", "notes": "Known for dramatic double A-frame rooflines.", "historic": null, "verified": false },
-    { "id": "primewood", "name": "Primewood", "city": "Sunnyvale", "region": "Silicon Valley", "yearStart": 1968, "yearEnd": 1972, "architects": [], "homes": 35, "streets": "Alison Way, Lennox Way, Beaverton Ct", "notes": "Late-period refined atrium and gallery models.", "historic": null, "verified": false },
-    { "id": "morepark", "name": "Morepark (Rose Glen)", "city": "San Jose", "region": "Silicon Valley", "yearStart": 1952, "yearEnd": 1953, "architects": [], "homes": null, "streets": "Margot Pl, Adele Pl (near San Jose City College)", "notes": "Compact ~1,300 sq ft early models.", "historic": null, "verified": false },
-    { "id": "fairglen", "name": "Fairglen", "city": "San Jose", "region": "Silicon Valley", "yearStart": 1957, "yearEnd": 1959, "architects": ["Jones & Emmons"], "homes": null, "streets": "Fairglen Dr, Fairwood Ave, Briarwood Ave, Booksin Ave (Willow Glen)", "notes": "Highly cohesive Willow Glen tract.", "historic": null, "verified": false },
-    { "id": "fairglen-additions", "name": "Fairglen Additions (1–3)", "city": "San Jose", "region": "Silicon Valley", "yearStart": 1959, "yearEnd": 1961, "architects": [], "homes": null, "streets": "Andalusia Way, Fairorchard Ave, Fairhill Ln, Fairlawn Ave (Willow Glen)", "notes": "Remarkably intact collection.", "historic": "National Register Historic District", "verified": false },
-    { "id": "fairhaven-sj", "name": "Fairhaven (Mossbrook)", "city": "San Jose", "region": "Silicon Valley", "yearStart": 1961, "yearEnd": 1963, "architects": [], "homes": null, "streets": "Mossbrook Ave, Mossbrook Cir, Student Ln", "notes": "Larger ~1,700 sq ft homes with expansive atriums.", "historic": null, "verified": false },
-    { "id": "hudson-sj", "name": "Hudson", "city": "San Jose", "region": "Silicon Valley", "yearStart": 1961, "yearEnd": 1963, "architects": ["Jones & Emmons", "Claude Oakland"], "homes": null, "streets": "Comstock Dr, Hudson Dr, Frobisher Way, Raleigh Dr", "notes": "Notable architectural diversity within one tract.", "historic": null, "verified": false },
-    { "id": "monta-loma", "name": "Fairview (Monta Loma)", "city": "Mountain View", "region": "Silicon Valley", "yearStart": 1954, "yearEnd": 1956, "architects": [], "homes": 200, "streets": "Quincy Dr, Benjamin Dr, Thaddeus Dr", "notes": "Three-bedroom mid-50s models.", "historic": null, "verified": false },
-    { "id": "bell-meadows", "name": "Bell Meadows", "city": "Mountain View", "region": "Silicon Valley", "yearStart": 1972, "yearEnd": 1973, "architects": [], "homes": 75, "streets": "Trophy Dr, Eichler Ct", "notes": "Late-era enclosed galleries and larger footprints.", "historic": null, "verified": false },
-    { "id": "fairgrove", "name": "Fairgrove", "city": "Cupertino", "region": "Silicon Valley", "yearStart": 1960, "yearEnd": 1961, "architects": [], "homes": 229, "streets": "Around Hyde Ave, Stendhal Ln", "notes": "Phase 2 added four-bedroom atrium models.", "historic": null, "verified": false },
-    { "id": "san-mateo-highlands", "name": "San Mateo Highlands", "city": "San Mateo", "region": "Peninsula", "yearStart": 1955, "yearEnd": 1964, "architects": ["Anshen + Allen", "Jones & Emmons", "Claude Oakland"], "homes": 700, "streets": "Pulgas Ridge; terraced hillside layout", "notes": "The largest Eichler neighborhood ever built; home of the steel X-100 prototype house.", "historic": null, "verified": false },
-    { "id": "19th-ave-park", "name": "19th Avenue Park", "city": "San Mateo", "region": "Peninsula", "yearStart": 1951, "yearEnd": 1953, "architects": [], "homes": null, "streets": "Urban flatland near Hwy 101", "notes": "Denser, commuter-oriented early tract.", "historic": null, "verified": false },
-    { "id": "atherwood", "name": "Atherwood", "city": "Redwood City", "region": "Peninsula", "yearStart": 1951, "yearEnd": 1953, "architects": [], "homes": null, "streets": "Transitional residential zones", "notes": "Bridge-period designs.", "historic": null, "verified": false },
-    { "id": "mills-estates", "name": "Mills Estates", "city": "Burlingame", "region": "Peninsula", "yearStart": 1964, "yearEnd": 1966, "architects": [], "homes": null, "streets": "Elevated sites in the Burlingame hills", "notes": "Upscale mid-60s interpretation.", "historic": null, "verified": false },
-    { "id": "foster-city", "name": "Foster City (Bay Vista / Marina Point / Treasure Isle)", "city": "Foster City", "region": "Peninsula", "yearStart": 1964, "yearEnd": 1967, "architects": ["Claude Oakland"], "homes": null, "streets": "Puffin Ct, Loon Ct; lagoon-adjacent", "notes": "Water-integrated siting on the lagoons.", "historic": null, "verified": false },
-    { "id": "terra-linda-north", "name": "Terra Linda North", "city": "San Rafael", "region": "Marin", "yearStart": 1955, "yearEnd": 1961, "architects": ["Anshen + Allen"], "homes": 625, "streets": "Manuel Freitas Pkwy, Las Colindas Rd", "notes": "Classic post-and-beam; includes a rare cluster of two-story models.", "historic": null, "verified": false },
-    { "id": "terra-linda-south", "name": "Terra Linda South", "city": "San Rafael", "region": "Marin", "yearStart": 1957, "yearEnd": 1960, "architects": ["Anshen + Allen", "Jones & Emmons"], "homes": null, "streets": "South of Nova Albion Way; Golden Hinde Blvd", "notes": "Courtyard and atrium models with strong streetscape rhythm.", "historic": null, "verified": false },
-    { "id": "marinwood", "name": "Lower Lucas Valley (Marinwood, \"The Berry Patch\")", "city": "San Rafael", "region": "Marin", "yearStart": 1957, "yearEnd": 1958, "architects": ["Anshen + Allen"], "homes": null, "streets": "Berry-themed street names", "notes": "Cohesive planning and strong preservation culture.", "historic": null, "verified": false },
-    { "id": "upper-lucas-valley", "name": "Upper Lucas Valley", "city": "San Rafael", "region": "Marin", "yearStart": 1962, "yearEnd": 1966, "architects": ["Claude Oakland"], "homes": null, "streets": "Idylberry Rd, north of San Rafael", "notes": "Double A-frame roofs adapted to steep terrain; active homeowners association with design review.", "historic": null, "verified": false },
-    { "id": "strawberry-point", "name": "Strawberry Point", "city": "Mill Valley", "region": "Marin", "yearStart": 1965, "yearEnd": 1965, "architects": [], "homes": 12, "streets": "Richardson Bay waterfront", "notes": "Rare bayfront Eichlers.", "historic": null, "verified": false },
-    { "id": "sleepy-hollow", "name": "Sleepy Hollow", "city": "San Anselmo", "region": "Marin", "yearStart": 1965, "yearEnd": 1966, "architects": ["Claude Oakland"], "homes": null, "streets": "Fawn Dr area", "notes": "Custom-style hillside models.", "historic": null, "verified": false },
-    { "id": "rancho-san-miguel", "name": "Rancho San Miguel", "city": "Walnut Creek", "region": "East Bay", "yearStart": 1955, "yearEnd": 1959, "architects": [], "homes": 375, "streets": "San Miguel Dr, El Divisadero", "notes": "The largest East Bay tract.", "historic": null, "verified": false },
-    { "id": "rancho-del-diablo", "name": "Rancho del Diablo", "city": "Concord", "region": "East Bay", "yearStart": 1964, "yearEnd": 1966, "architects": ["Claude Oakland"], "homes": 150, "streets": "Near Concord Community Park", "notes": "Upscale mid-60s models.", "historic": null, "verified": false },
-    { "id": "rancho-los-santos", "name": "Rancho Los Santos", "city": "Concord", "region": "East Bay", "yearStart": 1958, "yearEnd": 1965, "architects": [], "homes": 280, "streets": "Salem St and surroundings", "notes": "Includes a small 1965 enclave (~20 homes) plus a larger late-50s phase.", "historic": null, "verified": false },
-    { "id": "greenridge", "name": "Greenridge", "city": "Castro Valley", "region": "East Bay", "yearStart": 1962, "yearEnd": 1965, "architects": [], "homes": 200, "streets": "Highwood Rd, Feather Ct", "notes": "Ridge-adjacent tract with topographic variation.", "historic": null, "verified": false },
-    { "id": "sequoyah-hills", "name": "Sequoyah Hills", "city": "Oakland", "region": "East Bay", "yearStart": 1964, "yearEnd": 1964, "architects": [], "homes": 50, "streets": "Phaeton Dr (Oakland Hills)", "notes": "Hillside redwood-and-glass models with views.", "historic": null, "verified": false },
-    { "id": "diamond-heights", "name": "Diamond Heights", "city": "San Francisco", "region": "San Francisco", "yearStart": 1962, "yearEnd": 1964, "architects": ["Claude Oakland"], "homes": 100, "streets": "Between Twin Peaks and Glen Park", "notes": "Split-level urban Eichlers, 1,629–2,020 sq ft, built on steep hillsides.", "historic": null, "verified": false },
-    { "id": "south-land-park", "name": "South Land Park Hills (Unit 7)", "city": "Sacramento", "region": "Sacramento", "yearStart": 1955, "yearEnd": 1956, "architects": ["Jones & Emmons"], "homes": 60, "streets": "South Land Park Dr, Fordham Way, Oakridge Way", "notes": "Heat-adapted glass design for the Central Valley.", "historic": "Local Historic District", "verified": false },
-    { "id": "fairhaven-orange", "name": "Fairhaven", "city": "Orange", "region": "Southern California", "yearStart": 1960, "yearEnd": 1961, "architects": ["Jones & Emmons", "Claude Oakland"], "homes": null, "streets": "Near Fairhaven Ave", "notes": "First of the three Orange tracts.", "historic": null, "verified": false },
-    { "id": "fairmeadow-orange", "name": "Fairmeadow", "city": "Orange", "region": "Southern California", "yearStart": 1963, "yearEnd": 1964, "architects": ["Claude Oakland"], "homes": null, "streets": "Central Orange", "notes": "Second Orange tract; atrium-era models.", "historic": null, "verified": false },
-    { "id": "fairhills-orange", "name": "Fairhills", "city": "Orange", "region": "Southern California", "yearStart": 1964, "yearEnd": 1966, "architects": ["Claude Oakland"], "homes": null, "streets": "Orange hills", "notes": "Third and final Orange tract. The three Orange tracts total roughly 350 homes.", "historic": null, "verified": false },
-    { "id": "balboa-highlands", "name": "Balboa Highlands", "city": "Granada Hills (Los Angeles)", "region": "Southern California", "yearStart": 1963, "yearEnd": 1964, "architects": ["Jones & Emmons", "Claude Oakland"], "homes": 100, "streets": "Jimeno Ave, Lisette St, Nanette St, Darla Ave", "notes": "LA's Eichler tract; a designated Historic Preservation Overlay Zone (HPOZ).", "historic": "HPOZ (Los Angeles)", "verified": false },
-    { "id": "conejo-village", "name": "Conejo Village", "city": "Thousand Oaks", "region": "Southern California", "yearStart": 1964, "yearEnd": 1965, "architects": ["Claude Oakland"], "homes": null, "streets": "Camino Manzanas area", "notes": "Ventura County's Eichler enclave.", "historic": null, "verified": false }
+    {
+      "id": "university-gardens",
+      "name": "University Gardens",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1949,
+      "yearEnd": 1950,
+      "architects": [
+        "Anshen + Allen"
+      ],
+      "homes": null,
+      "streets": "Stanford Ave, Middlefield Rd",
+      "notes": "Early post-and-beam prototype tract.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.43109,
+        -122.14649
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "el-centro-gardens",
+      "name": "El Centro Gardens",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1950,
+      "yearEnd": 1950,
+      "architects": [],
+      "homes": null,
+      "streets": "El Centro Dr, Channing Ave",
+      "notes": "Transitional early tract.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.41226,
+        -122.13458
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "green-gables",
+      "name": "Green Gables",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1950,
+      "yearEnd": 1951,
+      "architects": [
+        "Anshen + Allen"
+      ],
+      "homes": null,
+      "streets": "Greer Rd, Channing Ave, Ivy Ln (near Edgewood Plaza)",
+      "notes": "One of the most architecturally cohesive early tracts.",
+      "historic": "National Register Historic District",
+      "verified": false,
+      "centroid": [
+        37.43525,
+        -122.11365
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "charleston-meadows",
+      "name": "Charleston Meadows",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1950,
+      "yearEnd": 1951,
+      "architects": [],
+      "homes": null,
+      "streets": "Wilkie Way, near Charleston Rd",
+      "notes": "Early indoor-outdoor flow designs.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.41604,
+        -122.12583
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "greer-park",
+      "name": "Greer Park",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1950,
+      "yearEnd": 1951,
+      "architects": [],
+      "homes": null,
+      "streets": "Adjacent to Greer Park, California Ave",
+      "notes": "Walkable, amenity-rich siting.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.42917,
+        -122.1419
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "channing-park",
+      "name": "Channing Park (1–3)",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1951,
+      "yearEnd": 1955,
+      "architects": [],
+      "homes": null,
+      "streets": "Channing Ave",
+      "notes": "Model evolution visible across the three phases.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.44699,
+        -122.15244
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairmeadow-pa",
+      "name": "Fairmeadow (\"The Circles\")",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1951,
+      "yearEnd": 1954,
+      "architects": [],
+      "homes": null,
+      "streets": "East Meadow Dr (concentric circular streets)",
+      "notes": "Famous curvilinear street geometry.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.42849,
+        -122.10739
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "greenmeadow",
+      "name": "Greenmeadow (1 & 2)",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1954,
+      "yearEnd": 1955,
+      "architects": [
+        "Jones & Emmons"
+      ],
+      "homes": null,
+      "streets": "Parkside Dr, Ferne Ave, Greenmeadow Way (near Charleston Rd)",
+      "notes": "Refined mid-50s designs; community pool and center.",
+      "historic": "National Register Historic District",
+      "verified": false,
+      "centroid": [
+        37.41407,
+        -122.11233
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "triple-el",
+      "name": "Triple El",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1955,
+      "yearEnd": 1955,
+      "architects": [],
+      "homes": null,
+      "streets": "El Cajon Way, El Capitan Ave, near El Camino Real",
+      "notes": "Named for its three 'El' streets.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.44238,
+        -122.1282
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "edgewood-pa",
+      "name": "Edgewood",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1956,
+      "yearEnd": 1956,
+      "architects": [],
+      "homes": null,
+      "streets": "Edgewood Dr, St Francis Dr (adjacent to Greer Rd)",
+      "notes": "Bridge-phase designs between early and atrium eras.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.45031,
+        -122.12636
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "royal-manor",
+      "name": "Royal Manor",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1957,
+      "yearEnd": 1958,
+      "architects": [],
+      "homes": null,
+      "streets": "Near Lawrence Rd, Louis Rd",
+      "notes": "Late-1950s refinement; first atrium models appear around this era.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.43049,
+        -122.11224
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "los-arboles",
+      "name": "Los Arboles",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1959,
+      "yearEnd": 1961,
+      "architects": [],
+      "homes": null,
+      "streets": "Ames Ave, Middlefield Rd, Holly Oak Dr, Cork Oak Way",
+      "notes": "Tree-themed street names; atrium-era models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.4309,
+        -122.11603
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "los-arboles-addition",
+      "name": "Los Arboles Addition",
+      "city": "Palo Alto",
+      "region": "Silicon Valley",
+      "yearStart": 1970,
+      "yearEnd": 1974,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Torreya Ct, Loma Verde Ave",
+      "notes": "Rare two-story Eichler models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.42946,
+        -122.12068
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "sunnyvale-manor-1",
+      "name": "Sunnyvale Manor I",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1949,
+      "yearEnd": 1949,
+      "architects": [],
+      "homes": 8,
+      "streets": "North Bayview Ave, East Maude Ave",
+      "notes": "The very first Eichler tract; pre-radiant-heating prototypes.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.38534,
+        -122.02305
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "sunnyvale-manor-2",
+      "name": "Sunnyvale Manor II",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1950,
+      "yearEnd": 1950,
+      "architects": [
+        "Anshen + Allen"
+      ],
+      "homes": 105,
+      "streets": "Morse Ave, Maple Ave, East Arbor Ave, East Duane Ave",
+      "notes": "AA-1 floor plan; the first architect-designed Eichlers with the glass window-wall.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.40048,
+        -122.01641
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairpark",
+      "name": "Fairpark",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1954,
+      "yearEnd": 1954,
+      "architects": [],
+      "homes": 48,
+      "streets": "Central Sunnyvale",
+      "notes": "Modest transitional models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.36883,
+        -122.03635
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "fairorchard",
+      "name": "Fairorchard",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1956,
+      "yearEnd": 1956,
+      "architects": [],
+      "homes": 85,
+      "streets": "Wright Ave, Edmonton Ave, La Salle Dr, Helena Dr, Homestead Rd",
+      "notes": "Strong indoor-outdoor flow.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.34503,
+        -122.05506
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairbrae",
+      "name": "Fairbrae",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1958,
+      "yearEnd": 1958,
+      "architects": [],
+      "homes": 87,
+      "streets": "Sheraton Dr, Pome Ave, Quince Ave, Pulora Ct, Hollenbeck Ave",
+      "notes": "Late-1950s refinement; community swim club.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.35734,
+        -122.04114
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairbrae-addition",
+      "name": "Fairbrae Addition",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1959,
+      "yearEnd": 1960,
+      "architects": [],
+      "homes": 275,
+      "streets": "Sesame Dr, Torrington Dr, Templeton Dr, Strawberry Ct, Tangerine Way",
+      "notes": "Major expansion phase.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.35504,
+        -122.03854
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "rancho-verde",
+      "name": "Rancho Verde",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1960,
+      "yearEnd": 1961,
+      "architects": [],
+      "homes": 140,
+      "streets": "South Mary Ave, Ticonderoga Dr, McIntosh Ave, Trenton Dr, Somerset Dr",
+      "notes": "Atrium layouts.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.38168,
+        -122.04518
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairwood",
+      "name": "Fairwood",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1961,
+      "yearEnd": 1962,
+      "architects": [],
+      "homes": 215,
+      "streets": "South Wolfe Rd, Dartshire Way, Mallard Way, Kingfisher Way, Carlisle Way, Firebird Way",
+      "notes": "Diverse floor plans.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.36508,
+        -122.01418
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "parmer-place",
+      "name": "Parmer Place",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1967,
+      "yearEnd": 1967,
+      "architects": [],
+      "homes": 42,
+      "streets": "Cumberland Dr, Piper Ave, Pear Ave, Brookline Dr",
+      "notes": "Late-era enclave.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.36752,
+        -122.04368
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "rancho-sans-souci",
+      "name": "Rancho Sans Souci",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1968,
+      "yearEnd": 1968,
+      "architects": [],
+      "homes": 84,
+      "streets": "Mackenzie Dr, Laurentian Dr, Olympus Dr, Pendleton Dr",
+      "notes": "Known for dramatic double A-frame rooflines.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.33701,
+        -122.05196
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "primewood",
+      "name": "Primewood",
+      "city": "Sunnyvale",
+      "region": "Silicon Valley",
+      "yearStart": 1968,
+      "yearEnd": 1972,
+      "architects": [],
+      "homes": 35,
+      "streets": "Alison Way, Lennox Way, Beaverton Ct",
+      "notes": "Late-period refined atrium and gallery models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.35061,
+        -122.04723
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "morepark",
+      "name": "Morepark (Rose Glen)",
+      "city": "San Jose",
+      "region": "Silicon Valley",
+      "yearStart": 1952,
+      "yearEnd": 1953,
+      "architects": [],
+      "homes": null,
+      "streets": "Margot Pl, Adele Pl (near San Jose City College)",
+      "notes": "Compact ~1,300 sq ft early models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.28628,
+        -121.90929
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairglen",
+      "name": "Fairglen",
+      "city": "San Jose",
+      "region": "Silicon Valley",
+      "yearStart": 1957,
+      "yearEnd": 1959,
+      "architects": [
+        "Jones & Emmons"
+      ],
+      "homes": null,
+      "streets": "Fairglen Dr, Fairwood Ave, Briarwood Ave, Booksin Ave (Willow Glen)",
+      "notes": "Highly cohesive Willow Glen tract.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.2795,
+        -121.9018
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairglen-additions",
+      "name": "Fairglen Additions (1–3)",
+      "city": "San Jose",
+      "region": "Silicon Valley",
+      "yearStart": 1959,
+      "yearEnd": 1961,
+      "architects": [],
+      "homes": null,
+      "streets": "Andalusia Way, Fairorchard Ave, Fairhill Ln, Fairlawn Ave (Willow Glen)",
+      "notes": "Remarkably intact collection.",
+      "historic": "National Register Historic District",
+      "verified": false,
+      "centroid": [
+        37.27801,
+        -121.90596
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairhaven-sj",
+      "name": "Fairhaven (Mossbrook)",
+      "city": "San Jose",
+      "region": "Silicon Valley",
+      "yearStart": 1961,
+      "yearEnd": 1963,
+      "architects": [],
+      "homes": null,
+      "streets": "Mossbrook Ave, Mossbrook Cir, Student Ln",
+      "notes": "Larger ~1,700 sq ft homes with expansive atriums.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.29067,
+        -121.98283
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "hudson-sj",
+      "name": "Hudson",
+      "city": "San Jose",
+      "region": "Silicon Valley",
+      "yearStart": 1961,
+      "yearEnd": 1963,
+      "architects": [
+        "Jones & Emmons",
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Comstock Dr, Hudson Dr, Frobisher Way, Raleigh Dr",
+      "notes": "Notable architectural diversity within one tract.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.27614,
+        -121.91718
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "monta-loma",
+      "name": "Fairview (Monta Loma)",
+      "city": "Mountain View",
+      "region": "Silicon Valley",
+      "yearStart": 1954,
+      "yearEnd": 1956,
+      "architects": [],
+      "homes": 200,
+      "streets": "Quincy Dr, Benjamin Dr, Thaddeus Dr",
+      "notes": "Three-bedroom mid-50s models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.41113,
+        -122.09978
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "bell-meadows",
+      "name": "Bell Meadows",
+      "city": "Mountain View",
+      "region": "Silicon Valley",
+      "yearStart": 1972,
+      "yearEnd": 1973,
+      "architects": [],
+      "homes": 75,
+      "streets": "Trophy Dr, Eichler Ct",
+      "notes": "Late-era enclosed galleries and larger footprints.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.3829,
+        -122.08832
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairgrove",
+      "name": "Fairgrove",
+      "city": "Cupertino",
+      "region": "Silicon Valley",
+      "yearStart": 1960,
+      "yearEnd": 1961,
+      "architects": [],
+      "homes": 229,
+      "streets": "Around Hyde Ave, Stendhal Ln",
+      "notes": "Phase 2 added four-bedroom atrium models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.315,
+        -122.01186
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "san-mateo-highlands",
+      "name": "San Mateo Highlands",
+      "city": "San Mateo",
+      "region": "Peninsula",
+      "yearStart": 1955,
+      "yearEnd": 1964,
+      "architects": [
+        "Anshen + Allen",
+        "Jones & Emmons",
+        "Claude Oakland"
+      ],
+      "homes": 700,
+      "streets": "Lexington Ave, Yorktown Rd, Bunker Hill Dr, Ticonderoga Dr (Pulgas Ridge)",
+      "notes": "The largest Eichler neighborhood ever built; home of the steel X-100 prototype house.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.5193,
+        -122.34807
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "19th-ave-park",
+      "name": "19th Avenue Park",
+      "city": "San Mateo",
+      "region": "Peninsula",
+      "yearStart": 1951,
+      "yearEnd": 1953,
+      "architects": [],
+      "homes": null,
+      "streets": "Urban flatland near Hwy 101",
+      "notes": "Denser, commuter-oriented early tract.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.4969,
+        -122.33306
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "atherwood",
+      "name": "Atherwood",
+      "city": "Redwood City",
+      "region": "Peninsula",
+      "yearStart": 1951,
+      "yearEnd": 1953,
+      "architects": [],
+      "homes": null,
+      "streets": "Atherwood Ave",
+      "notes": "Bridge-period designs.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.46001,
+        -122.22321
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "mills-estates",
+      "name": "Mills Estates",
+      "city": "Burlingame",
+      "region": "Peninsula",
+      "yearStart": 1964,
+      "yearEnd": 1966,
+      "architects": [],
+      "homes": null,
+      "streets": "Elevated sites in the Burlingame hills",
+      "notes": "Upscale mid-60s interpretation.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.5781,
+        -122.34731
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "foster-city",
+      "name": "Foster City (Bay Vista / Marina Point / Treasure Isle)",
+      "city": "Foster City",
+      "region": "Peninsula",
+      "yearStart": 1964,
+      "yearEnd": 1967,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Puffin Ct, Loon Ct; lagoon-adjacent",
+      "notes": "Water-integrated siting on the lagoons.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.57049,
+        -122.25935
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "terra-linda-north",
+      "name": "Terra Linda North",
+      "city": "San Rafael",
+      "region": "Marin",
+      "yearStart": 1955,
+      "yearEnd": 1961,
+      "architects": [
+        "Anshen + Allen"
+      ],
+      "homes": 625,
+      "streets": "Manuel Freitas Pkwy, Las Colindas Rd",
+      "notes": "Classic post-and-beam; includes a rare cluster of two-story models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        38.00843,
+        -122.54547
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "terra-linda-south",
+      "name": "Terra Linda South",
+      "city": "San Rafael",
+      "region": "Marin",
+      "yearStart": 1957,
+      "yearEnd": 1960,
+      "architects": [
+        "Anshen + Allen",
+        "Jones & Emmons"
+      ],
+      "homes": null,
+      "streets": "South of Nova Albion Way; Golden Hinde Blvd",
+      "notes": "Courtyard and atrium models with strong streetscape rhythm.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.99646,
+        -122.54503
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "marinwood",
+      "name": "Lower Lucas Valley (Marinwood, \"The Berry Patch\")",
+      "city": "San Rafael",
+      "region": "Marin",
+      "yearStart": 1957,
+      "yearEnd": 1958,
+      "architects": [
+        "Anshen + Allen"
+      ],
+      "homes": null,
+      "streets": "Berry-themed street names",
+      "notes": "Cohesive planning and strong preservation culture.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        38.03285,
+        -122.54459
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "upper-lucas-valley",
+      "name": "Upper Lucas Valley",
+      "city": "San Rafael",
+      "region": "Marin",
+      "yearStart": 1962,
+      "yearEnd": 1966,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Idylberry Rd, Mount Muir Ct",
+      "notes": "Double A-frame roofs adapted to steep terrain; active homeowners association with design review.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        38.03022,
+        -122.5754
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "strawberry-point",
+      "name": "Strawberry Point",
+      "city": "Mill Valley",
+      "region": "Marin",
+      "yearStart": 1965,
+      "yearEnd": 1965,
+      "architects": [],
+      "homes": 12,
+      "streets": "Richardson Bay waterfront",
+      "notes": "Rare bayfront Eichlers.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.90604,
+        -122.54498
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "sleepy-hollow",
+      "name": "Sleepy Hollow",
+      "city": "San Anselmo",
+      "region": "Marin",
+      "yearStart": 1965,
+      "yearEnd": 1966,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Fawn Dr",
+      "notes": "Custom-style hillside models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        38.00217,
+        -122.57481
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "rancho-san-miguel",
+      "name": "Rancho San Miguel",
+      "city": "Walnut Creek",
+      "region": "East Bay",
+      "yearStart": 1955,
+      "yearEnd": 1959,
+      "architects": [],
+      "homes": 375,
+      "streets": "San Miguel Dr, El Divisadero",
+      "notes": "The largest East Bay tract.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.89296,
+        -122.05165
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "rancho-del-diablo",
+      "name": "Rancho del Diablo",
+      "city": "Concord",
+      "region": "East Bay",
+      "yearStart": 1964,
+      "yearEnd": 1966,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": 150,
+      "streets": "Near Concord Community Park",
+      "notes": "Upscale mid-60s models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.97685,
+        -122.03356
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "rancho-los-santos",
+      "name": "Rancho Los Santos",
+      "city": "Concord",
+      "region": "East Bay",
+      "yearStart": 1958,
+      "yearEnd": 1965,
+      "architects": [],
+      "homes": 280,
+      "streets": "Salem St",
+      "notes": "Includes a small 1965 enclave (~20 homes) plus a larger late-50s phase.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.97144,
+        -121.99543
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "greenridge",
+      "name": "Greenridge",
+      "city": "Castro Valley",
+      "region": "East Bay",
+      "yearStart": 1962,
+      "yearEnd": 1965,
+      "architects": [],
+      "homes": 200,
+      "streets": "Highwood Rd, Feather Ct",
+      "notes": "Ridge-adjacent tract with topographic variation.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.71439,
+        -122.04799
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "sequoyah-hills",
+      "name": "Sequoyah Hills",
+      "city": "Oakland",
+      "region": "East Bay",
+      "yearStart": 1964,
+      "yearEnd": 1964,
+      "architects": [],
+      "homes": 50,
+      "streets": "Phaeton Dr (Oakland Hills)",
+      "notes": "Hillside redwood-and-glass models with views.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.77242,
+        -122.13872
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "diamond-heights",
+      "name": "Diamond Heights",
+      "city": "San Francisco",
+      "region": "San Francisco",
+      "yearStart": 1962,
+      "yearEnd": 1964,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": 100,
+      "streets": "Amber Dr, Cameo Way, Duncan St (between Twin Peaks and Glen Park)",
+      "notes": "Split-level urban Eichlers, 1,629–2,020 sq ft, built on steep hillsides.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        37.74427,
+        -122.44473
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "south-land-park",
+      "name": "South Land Park Hills (Unit 7)",
+      "city": "Sacramento",
+      "region": "Sacramento",
+      "yearStart": 1955,
+      "yearEnd": 1956,
+      "architects": [
+        "Jones & Emmons"
+      ],
+      "homes": 60,
+      "streets": "South Land Park Dr, Fordham Way, Oakridge Way",
+      "notes": "Heat-adapted glass design for the Central Valley.",
+      "historic": "Local Historic District",
+      "verified": false,
+      "centroid": [
+        38.5102,
+        -121.51553
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairhaven-orange",
+      "name": "Fairhaven",
+      "city": "Orange",
+      "region": "Southern California",
+      "yearStart": 1960,
+      "yearEnd": 1961,
+      "architects": [
+        "Jones & Emmons",
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Fairhaven Ave",
+      "notes": "First of the three Orange tracts.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        33.7733,
+        -117.84469
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "fairmeadow-orange",
+      "name": "Fairmeadow",
+      "city": "Orange",
+      "region": "Southern California",
+      "yearStart": 1963,
+      "yearEnd": 1964,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Central Orange",
+      "notes": "Second Orange tract; atrium-era models.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        33.75063,
+        -117.87223
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "fairhills-orange",
+      "name": "Fairhills",
+      "city": "Orange",
+      "region": "Southern California",
+      "yearStart": 1964,
+      "yearEnd": 1966,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Orange hills",
+      "notes": "Third and final Orange tract. The three Orange tracts total roughly 350 homes.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        33.75063,
+        -117.87223
+      ],
+      "centroidPrecision": "city"
+    },
+    {
+      "id": "balboa-highlands",
+      "name": "Balboa Highlands",
+      "city": "Granada Hills (Los Angeles)",
+      "region": "Southern California",
+      "yearStart": 1963,
+      "yearEnd": 1964,
+      "architects": [
+        "Jones & Emmons",
+        "Claude Oakland"
+      ],
+      "homes": 100,
+      "streets": "Jimeno Ave, Lisette St, Nanette St, Darla Ave",
+      "notes": "LA's Eichler tract; a designated Historic Preservation Overlay Zone (HPOZ).",
+      "historic": "HPOZ (Los Angeles)",
+      "verified": false,
+      "centroid": [
+        34.30147,
+        -118.50294
+      ],
+      "centroidPrecision": "street"
+    },
+    {
+      "id": "conejo-village",
+      "name": "Conejo Village",
+      "city": "Thousand Oaks",
+      "region": "Southern California",
+      "yearStart": 1964,
+      "yearEnd": 1965,
+      "architects": [
+        "Claude Oakland"
+      ],
+      "homes": null,
+      "streets": "Camino Manzanas area",
+      "notes": "Ventura County's Eichler enclave.",
+      "historic": null,
+      "verified": false,
+      "centroid": [
+        34.17056,
+        -118.83759
+      ],
+      "centroidPrecision": "city"
+    }
   ]
 }
