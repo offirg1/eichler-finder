@@ -3,20 +3,31 @@
 let TRACTS = [];
 let FAMILIES = [];
 let QUIZ = [];
+let HOMES = {}; // tractId -> { models, index: Map("<number> <normalized street>" -> {model, status}) }
 let selectedTract = null;
+let exactHome = null; // set when an address lookup hits the per-lot records
 
 const $ = (sel) => document.querySelector(sel);
 
 async function init() {
-  const [tractsRes, modelsRes] = await Promise.all([
+  const [tractsRes, modelsRes, homesRes] = await Promise.all([
     fetch("data/tracts.json"),
     fetch("data/model-families.json"),
+    fetch("data/homes-palo-alto.json"),
   ]);
   const tractsData = await tractsRes.json();
   const modelsData = await modelsRes.json();
+  const homesData = await homesRes.json();
   TRACTS = tractsData.tracts;
   FAMILIES = modelsData.families;
   QUIZ = modelsData.quiz;
+  for (const [tractId, data] of Object.entries(homesData.tracts)) {
+    const index = new Map();
+    for (const [num, street, model, status] of data.homes) {
+      index.set(`${num} ${normStreet(street)}`, { model, status });
+    }
+    HOMES[tractId] = { models: data.models, index };
+  }
 
   buildRegionSelect();
   buildTractSelect("");
@@ -72,8 +83,11 @@ function showTractInfo(tract) {
       <dt>Homes</dt><dd>${homes}</dd>
       <dt>Where</dt><dd>${tract.streets || "—"}</dd>
     </dl>
-    <p>${tract.notes || ""}</p>`;
+    <p>${tract.notes || ""}</p>
+    ${coverageNote(tract)}
+    <div id="exact-home"></div>`;
   box.classList.remove("hidden");
+  if (exactHome) $("#exact-home").innerHTML = exactHomeCard(exactHome);
 }
 
 function buildQuiz() {
@@ -179,6 +193,12 @@ function renderResult(answers) {
     html += `<p><strong>Also possible:</strong></p>`;
     html += runners.map((r) => familyCard(r.f, false)).join("");
   }
+  if (exactHome && exactHome.model != null) {
+    html =
+      exactHomeCard(exactHome) +
+      `<p><strong>For comparison, your quiz answers point to this family:</strong></p>` +
+      html;
+  }
   box.innerHTML = html;
 }
 
@@ -205,13 +225,56 @@ function familyCard(f, isTop) {
 const STREET_SUFFIX =
   /\b(drive|dr|avenue|ave|way|road|rd|court|ct|lane|ln|boulevard|blvd|street|st|parkway|pkwy|circle|cir|place|pl)\b\.?/g;
 
+const DIRECTIONALS = { e: "east", w: "west", n: "north", s: "south" };
+
 function normStreet(s) {
   return s
     .toLowerCase()
     .replace(STREET_SUFFIX, "")
     .replace(/[^a-z0-9 ]/g, " ")
+    .replace(/\b([ewns])\b/g, (_, d) => DIRECTIONALS[d])
     .replace(/\s+/g, " ")
     .trim();
+}
+
+/* ---- per-lot model records (Palo Alto rollout) ---- */
+
+function lookupHome(tractId, geoAddress) {
+  const data = HOMES[tractId];
+  const num = geoAddress?.house_number;
+  const road = geoAddress?.road;
+  if (!data || !num || !road) return null;
+  const rec = data.index.get(`${num} ${normStreet(road)}`);
+  if (!rec) return null;
+  const modelInfo = rec.model != null ? data.models[String(rec.model)] : null;
+  return { ...rec, modelInfo, address: `${num} ${road}` };
+}
+
+function coverageNote(tract) {
+  if (HOMES[tract.id]) {
+    return `<div class="tract-note">📗 We have the original per-address model records for ${tract.name} — use the address box above to get your exact model.</div>`;
+  }
+  if (tract.city === "Palo Alto") {
+    return `<div class="tract-note">Exact model lookup for this neighborhood is in progress — Greenmeadow is live today, and the rest of Palo Alto is being transcribed next.</div>`;
+  }
+  return `<div class="tract-note">Exact model lookup is <strong>coming soon</strong> for ${tract.city}. Palo Alto is live first — meanwhile, the visual quiz below narrows down your model family.</div>`;
+}
+
+function exactHomeCard(h) {
+  if (h.model == null) {
+    return `<div class="exact-card">
+      <h3>${h.address}</h3>
+      <p>Your home is in the surveyed records, but the 2004 historic survey was <strong>unable to determine its original model</strong> — usually because of later remodeling. The visual quiz below can still narrow down what it started as.</p>
+      <p class="source-line">Source: Greenmeadow National Register nomination (NPS, listed 2005).</p>
+    </div>`;
+  }
+  return `<div class="exact-card">
+    <p class="exact-kicker">Exact match from the original records</p>
+    <h3>${h.modelInfo.name}</h3>
+    <p>${h.modelInfo.summary}</p>
+    <p>${h.status === "C" ? "Your home is listed as a <strong>contributing property</strong> of the Greenmeadow National Register Historic District." : "Your home is in the Greenmeadow National Register Historic District (listed as non-contributing due to later modifications)."}</p>
+    <p class="source-line">Source: Greenmeadow National Register nomination inventory (NPS, listed 2005) — not a guess, an archival record for ${h.address}.</p>
+  </div>`;
 }
 
 function tractStreets(t) {
@@ -323,12 +386,23 @@ async function handleAddressLookup(e) {
       return;
     }
     const m = matchTract(geo);
+    exactHome = m.t ? lookupHome(m.t.id, geo.address) : null;
     if (m.confidence === "street") {
       selectTractInUI(m.t);
-      setStatus(`Found it — your street is part of ${m.t.name} in ${m.t.city}.`, "ok");
+      setStatus(
+        exactHome && exactHome.model != null
+          ? `Found it — and we have the original records: your home is ${exactHome.modelInfo.name}.`
+          : `Found it — your street is part of ${m.t.name} in ${m.t.city}.`,
+        "ok"
+      );
     } else if (m.confidence === "near") {
       selectTractInUI(m.t);
-      setStatus(`You're about ${m.dist.toFixed(1)} km from the center of ${m.t.name}, ${m.t.city} — very likely your tract.`, "ok");
+      setStatus(
+        exactHome && exactHome.model != null
+          ? `Found it — and we have the original records: your home is ${exactHome.modelInfo.name}.`
+          : `You're about ${m.dist.toFixed(1)} km from the center of ${m.t.name}, ${m.t.city} — very likely your tract.`,
+        "ok"
+      );
     } else if (m.confidence === "nearby") {
       selectTractInUI(m.t);
       setStatus(`Closest known tract: ${m.t.name}, ${m.t.city} (~${m.dist.toFixed(1)} km away). Double-check it — or pick manually below.`, "");
@@ -358,6 +432,7 @@ function wireEvents() {
   });
   $("#tract-select").addEventListener("change", (e) => {
     selectedTract = TRACTS.find((t) => t.id === e.target.value) || null;
+    exactHome = null; // manual tract change invalidates any address-based exact match
     showTractInfo(selectedTract);
   });
   $("#btn-quiz").addEventListener("click", () => show("step-quiz"));

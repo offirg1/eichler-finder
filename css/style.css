@@ -192,6 +192,25 @@ select {
 }
 .warn { background: #fbecec; border-left-color: #b3462e; }
 
+/* exact per-lot match */
+.exact-card {
+  border: 3px solid var(--teal);
+  border-radius: var(--radius);
+  background: #eef6f4;
+  padding: 1.1rem 1.4rem;
+  margin: 1rem 0;
+}
+.exact-card h3 { margin: 0 0 0.4rem; font-size: 1.35rem; color: var(--teal); }
+.exact-kicker {
+  margin: 0 0 0.15rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--walnut);
+}
+.source-line { font-size: 0.82rem; color: #63705e; margin-bottom: 0; }
+
 /* next steps + footer */
 .next-steps { margin-top: 2rem; border-top: 2px dashed var(--line); padding-top: 1rem; }
 .next-steps h3 { margin: 0.25rem 0 0.5rem; }

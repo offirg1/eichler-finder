@@ -45,5 +45,5 @@ Centroids live in `tracts.json` (`centroid` + `centroidPrecision`), generated on
 
 1. ~~**MVP:** tract picker + visual quiz → model family~~ ✅
 2. ~~**Address lookup:** geocode the user's address, auto-detect the tract~~ ✅ (centroid-based; boundary polygons would be the next refinement)
-3. **Then:** per-lot model numbers — transcribe the Berkeley site plans for a few flagship tracts (Greenmeadow, San Mateo Highlands, the Orange tracts) into a `homes` table; add a "confirm/correct my model" button so owners crowdsource the rest
-4. **Later:** photo-based identification, floor-plan galleries per model
+3. **Per-lot model records (Palo Alto first):** ✅ started — `data/homes-palo-alto.json` holds 243 Greenmeadow addresses with their exact model (1–6), transcribed from the Greenmeadow National Register nomination inventory (a public federal document; the UC Berkeley site-plan portal was unreachable at transcription time). When an address lookup hits a covered home, the app shows the exact model with the archival source. Other Palo Alto tracts show "in progress", other cities "coming soon". Next transcription targets: more Palo Alto NRHP/survey documents, then the Berkeley Oakland & Imada site plans when reachable.
+4. **Later:** crowdsourced "confirm/correct my model", photo-based identification, floor-plan galleries per model
